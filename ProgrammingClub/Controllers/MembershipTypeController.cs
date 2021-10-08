@@ -31,6 +31,7 @@ namespace ProgrammingClub.Controllers
             return View("CreateMembershipType");
         }
 
+        [Authorize(Roles = "User, Admin")]
         // POST: MembershipType/Create
         [HttpPost]
         public ActionResult Create(FormCollection collection)
@@ -54,7 +55,7 @@ namespace ProgrammingClub.Controllers
             MembershipTypeModel membershipTypeModel = membershipTypeRepository.GetMembershipTypeById(id);
             return View("EditMembershipType", membershipTypeModel);
         }
-
+        [Authorize(Roles = "User, Admin")]
         // POST: MembershipType/Edit/5
         [HttpPost]
         public ActionResult Edit(Guid id, FormCollection collection)
@@ -79,6 +80,7 @@ namespace ProgrammingClub.Controllers
             return View("Delete", membershipTypeModel);
         }
 
+        [Authorize(Roles = "Admin")]
         // POST: MembershipType/Delete/5
         [HttpPost]
         public ActionResult Delete(Guid id, FormCollection collection)
