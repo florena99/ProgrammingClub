@@ -16,10 +16,5 @@ namespace ProgrammingClub.Models
 
         public int Revision { get; set; }
 
-        public Guid? IDSnippetPreviousVersion { get; set; }
-
-        public DateTime DateTimeAdded { get; set; }
-
-        public bool IsPublished { get; set; }
     }
 }

@@ -183,6 +183,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AnnouncementsController.cs" />
+    <Compile Include="Controllers\CodeSnippetController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MemberController.cs" />
@@ -205,6 +206,7 @@
     <Compile Include="Models\MembershipTypeModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\AnnouncementRepository.cs" />
+    <Compile Include="Repositories\CodeSnippetRepository.cs" />
     <Compile Include="Repositories\MemberRepository.cs" />
     <Compile Include="Repositories\MembershipTypeRepository.cs" />
     <Compile Include="Startup.cs" />
@@ -289,6 +291,8 @@
     <Content Include="Views\Member\Details.cshtml" />
     <Content Include="Views\Member\EditMember.cshtml" />
     <Content Include="Views\Member\Delete.cshtml" />
+    <Content Include="Views\CodeSnippet\Index.cshtml" />
+    <Content Include="Views\CodeSnippet\Create.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
