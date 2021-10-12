@@ -62,11 +62,12 @@
                 @Html.ActionLink("Edit", "Edit", new { id = item.IDMember })
             } |
             @Html.ActionLink("Details", "Details", new { id = item.IDMember }) |
+            @Html.ActionLink("DetailsViewModel", "DetailsViewModel", new { id = item.IDMember }) |
             @if (User.IsInRole("Admin"))
             {
                 @Html.ActionLink("Delete", "Delete", new { id = item.IDMember })
             }
-            </td>
+        </td>
     </tr>
 }
 
